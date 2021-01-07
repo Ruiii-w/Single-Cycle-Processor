@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../Ex2.srcs/sources_1/ip/cpuclk" \
+"../../../../Ex2.srcs/sources_1/ip/prgrom/sim/prgrom.v" \
+"../../../../Ex2.srcs/sources_1/new/programrom.v" \
+"../../../../Ex2.srcs/sim_1/new/rom_sim.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
